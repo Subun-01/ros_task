@@ -15,7 +15,7 @@ Creating the package and Robot Description
 <ul>
 <li>run <code>ros2 launch ros_task_2.launch.py</code> to open gazebo with the bot inside it <br>
 This launch file will be provided by us. (Linking will be found in this document)</li>
-<li>and <code>rosrun teleop_twist_keyboard teleop_twist_keyboard.py</code> to control the simulated robot!</li>
+<li>and <code>ros2 run teleop_twist_keyboard teleop_twist_keyboard.py</code> to control the simulated robot!</li>
 </ul>
 <p><strong>But</strong> </p>
 <p>the <code>mini_bot_1.urdf.xacro</code> is not ready yet… So let's get started with that.</p>
@@ -223,6 +223,6 @@ The x and y will change to +/-0.58 and +/-0.36 for the left/right wheels.
 We’ll let you figure out the roll, pitch, and yaw by yourself.</p>
 
 
-Just launch the launch file, run the teleop node as described at the start and have fun driving around the Hologlyph Bot!</p>
+Just launch the launch file, run the teleop node as described at the start and have fun driving around the Mini Bot!</p>
 <p>BONUS: Observe the Holonomic Mode in teleop package. and figure out what teleop is actually doing by using <code>echo</code> and <code>info</code>. For Ex:<code>ros2 topic info /cmd_vel</code>.</p>
 <hr />
