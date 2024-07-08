@@ -1,4 +1,4 @@
-So what is Holonomic Drive?
+## So what is Holonomic Drive?
 
 An object in the physical “3D” space we live in has 6 Degreed of Freedom.
 3 translations, 3 rotations.
@@ -19,7 +19,7 @@ The above block of explanation might now give you some clarity on what is holono
 Enough chit-chat, let’s get down to business!
 
 
-The Task
+## The Task
 So continuing from where we left off in Step1. We now have a launch file which opens gazebo, empty world and spawns the robot.
 
 If you do that and then do rostopic list, you should find two topic of interest:
@@ -34,7 +34,7 @@ subscribe to /odom and
 publish to /cmd_vel
 
 
-Now let’s start writing the controller.py file.
+## Now let’s start writing the controller.py file.
 
 The content of the comment in boilerplate code is very important so let’s repeat it here:
 
@@ -52,7 +52,7 @@ This is probably the crux of Task 2B
 Please note this is just the approach we took, there may be other approaches that you may come up with.
 Feel absolutely free to go ahead with that approach.
 
-The objective is simple
+### The objective is simple
 Make the robot go to desired [x_d, y_d, theta_d] 
 Thats it!
 
@@ -67,5 +67,5 @@ increment index if index < length of the list.
 repeat
 That’s it!
 
-If the robot goes to the sequence of desired goal poses one after other (defined by you), Congratulations you are almost done with Task 1!🥳
+If the robot goes to the sequence of desired goal poses one after other (defined by you), Congratulations you are almost done with Task 2B!🥳
 
