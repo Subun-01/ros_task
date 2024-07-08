@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 import time
 import math
-from tf_transformations import euler_from_quaternion
+from tf_transformations import euler_from_quaternion #you will require this to get theta since odom data gives orientation in quternion form but you need the orientation in euler form, research more to get idea
 
 class Task2BController(Node):
 
